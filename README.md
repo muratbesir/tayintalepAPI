@@ -1,4 +1,4 @@
-# 🏛️ Personel Tayin Talebi Uygulaması
+Personel Tayin Talebi Uygulaması
 
 Bu proje, adliyede görev yapan personelin başka bir adliyeye tayin talebinde bulunabilmesini sağlayan web tabanlı bir sistemdir.
  Personel sisteme giriş yaparak yeni talep oluşturabilir, önceki taleplerini görüntüleyebilir ve taleplerin durumunu takip edebilir.
@@ -6,7 +6,7 @@ Yönetici ise bu talepleri görüntüleyebilir, onaylayabilir ve reddebilir.
 
  
 
-## 🚀 Kullanılan Teknolojiler
+ Kullanılan Teknolojiler
 
 ### Backend
 - **ASP.NET Core Web API
@@ -25,12 +25,12 @@ Yönetici ise bu talepleri görüntüleyebilir, onaylayabilir ve reddebilir.
 
 ---
 
-## ⚙️ Kurulum Talimatları
+ Kurulum Talimatları
 
 ### Backend (.NET Core API)
 
 1. **Veritabanını oluşturun:**
-   - `appsettings.json` dosyasındaki bağlantı cümlesini (`ConnectionStrings:DefaultConnection`) kendi SQL Server bilgilerinize göre güncelleyin.
+   - `appsettings.json` dosyasındaki bağlantı cümlesini (`ConnectionStrings:DefaultConnection`) 
 2. **Veritabanı migrasyonları:**
    ```bash
 3.dotnet ef database update
@@ -80,15 +80,23 @@ Loglama desteği (işlem takibi ve hata kaydı)
  Backend (ASP.NET Core)
 
 TayinTalepAPI/
-│
+
 ├── Controllers/                    # API endpoint'lerini barındıran controller dosyaları
+
 │   ├── AdliyeController.cs         # Adliye listesi (81 il) ile ilgili işlemleri içerir
+
 │   ├── AuthController.cs           # Giriş işlemleri ve JWT token üretimi
+
 │   ├── Class.cs                    # (Gereksizse kaldırılabilir) - genel sınıf
+
 │   ├── KullaniciController.cs      # Kullanıcının temel bilgilerini dönen işlemler
+
 │   ├── TalepController.cs          # Tayin taleplerini oluşturan ve listeleyen işlemler
+
 │   ├── TayinController.cs          # Tayin talebi ile ilgili özel işlemler (gerekliyse)
+
 │   ├── YoneticiController.cs       # Yönetici işlemleri (talepleri görüntüleme, onaylama)
+
 │
 ├── Entities/                       # Entity sınıfları ve DTO'lar
 │   ├── Kullanici.cs                # Kullanıcı entity'si (sicil no, ad-soyad, unvan vb.)
