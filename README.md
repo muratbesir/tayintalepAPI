@@ -99,35 +99,57 @@ TayinTalepAPI/
 
 │
 ├── Entities/                       # Entity sınıfları ve DTO'lar
+
 │   ├── Kullanici.cs                # Kullanıcı entity'si (sicil no, ad-soyad, unvan vb.)
+
 │   ├── Talep.cs                    # Talep entity'si (başlık, tür, durum, hedef adliye vb.)
+
 │   ├── TayinTalebi.cs             # Alternatif ya da genişletilmiş talep modeli
+
 │   ├── KullaniciLoginDto.cs       # Giriş işlemi için kullanılan DTO
+
 │   ├── TalepCreateDto.cs          # Yeni talep oluşturmak için kullanılan DTO
+
 │   ├── TalepDto.cs                # Taleplerin detaylı gösterimi için kullanılan DTO
+
 │   ├── TalepOlusturDto.cs         # Yeni talep POST işleminde kullanılan DTO
+
 │
 ├── Helpers/                        
 │   └── JwtHelper.cs               # JWT token oluşturma ve doğrulama işlemleri
 │
+
 ├── Data/
 │   └── ApplicationDbContext.cs    # Entity Framework Core DbContext sınıfı
 │
+
 ├── Logs/                          
 │   └── (log-2025-06-09.txt)       # Hata ve işlem loglarının günlük olarak tutulduğu klasör
 │
+
 └── Program.cs                     # Uygulama başlatma ve servis yapılandırma dosyası
+
  Frontend (React.js)
 
 React/
 │
 ├── AdliyeSelect.js                # 81 il merkezindeki adliyeleri listeleyen dropdown bileşeni
+
 ├── Dashboard.js                   # Giriş sonrası yönlendirilen genel panel sayfası
+
 ├── KullaniciTaleplerPage.js       # Giriş yapan kullanıcının tüm taleplerini listeleyen sayfa
+
 ├── Layout.js                      # Tüm sayfalarda ortak kullanılan üst/yan menü düzeni
+
 ├── Login.js                       # Sicil numarası ve şifre ile giriş formu
+
 ├── Profil.js                      # Personelin temel bilgilerini gösteren bileşen
+
 ├── ProtectedRoute.js              # Kimliği doğrulanmamış kullanıcıyı girişe yönlendirir
+
 ├── Taleplerim.js                  # Kullanıcının önceki başvurularını gösteren bileşen
+
 ├── YeniTalepForm.js               # Yeni tayin talebi oluşturma formu
+
 ├── YoneticiTalepler.js            # Yöneticinin tüm talepleri görüntülediği yönetici ekranı
+
