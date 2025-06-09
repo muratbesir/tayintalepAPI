@@ -32,7 +32,7 @@ Yönetici ise bu talepleri görüntüleyebilir, onaylayabilir ve reddebilir.
 1. **Veritabanını oluşturun:**
    - `appsettings.json` dosyasındaki bağlantı cümlesini (`ConnectionStrings:DefaultConnection`) 
 2. **Veritabanı migrasyonları:**
-   ```bash
+3. bash
 3.dotnet ef database update
 4.cd tayintalepAPI\tayintalepAPI\tayin-talep-frontend\
 5.npm install
