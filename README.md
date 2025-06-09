@@ -4,7 +4,7 @@ Bu proje, adliyede görev yapan personelin başka bir adliyeye tayin talebinde b
  Personel sisteme giriş yaparak yeni talep oluşturabilir, önceki taleplerini görüntüleyebilir ve taleplerin durumunu takip edebilir.
 Yönetici ise bu talepleri görüntüleyebilir, onaylayabilir ve reddebilir.
 
-
+ 
 
 ## 🚀 Kullanılan Teknolojiler
 
